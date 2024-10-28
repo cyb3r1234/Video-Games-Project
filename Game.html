@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Website Elements On Scroll - HTML, CSS & Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  </head>
+  <body>
+ 
+    <!--<li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li> -->
+
+    <section class="sec-01">
+      <div class="container">
+
+        <div class="scroll-down">
+          <a href="/index.html"><i class="ri-arrow-up-s-fill"></i></a>
+      </div>
+  
+
+        <div class="button-Cotainer">
+          <a href="/TicTacToe.html" ><button id="Play-Btn" >PLAY</button></a>
+        </div>
+    
+        <h2 class="main-title">Games</h2>
+        <div class="content">
+          <div class="image">
+            <img src="img1.webp">
+          </div>
+          <div class="text-box">
+            <h3>Tic-Tac-Toe</h3>
+            <p>The goal of the game is to be the first person to get three of your symbols in a row. This can be in a row horizontally, vertically, or diagonally. So, if you can get three "X"s or three "O"s in a straight line, you win!</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">Flappy Bird </h3>
+        <section class="button-Cotainer-2">
+
+
+          <a href="/FlappyBird.html" ><button id="Play-Btn-2" >PLAY</button></a>
+          </section>
+        <div class="content">
+
+
+          <div class="image">
+            <img src="img2.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+
+            <p>The goal of the game is to be the first person to get three of your symbols in a row. This can be in a row horizontally, vertically, or diagonally. So, if you can get three "X"s or three "O"s in a straight line, you win!</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">Snake-Game</h3>
+        <div class="content">
+          
+          <a href="/SNAKE.html" ><button id="Play-Btn-3" >PLAY</button></a>
+
+
+
+
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+
+            <p>The Snake Game is a classic arcade game that has been around for decades. The objective is simple: control a snake that grows longer as it eats food, while avoiding running into itself or the boundaries of the playing field.</p>
+
+          </div>
+
+          <div class="image">
+            <img src="background.png" alt="">
+
+         
+          </div>
+        </div>
+      </div>
+
+      
+
+    </section>
+    <section class="sec-01">
+      <div class="container">
+
+
+  
+
+          <a href="/source/index.html" ><button id="Play-Btn-4" >PLAY</button></a>
+
+    
+        <div class="content">
+          <div class="image">
+            <img src="Fruit-Ninja.png">
+          </div>
+          <div class="text-box">
+            <h3>Fruit-Ninja</h3>
+            <p>Fruit Ninja is a popular mobile game where you play as a ninja slicing fruit that is thrown into the air.
+
+              You swipe your finger across the screen to mimic the slicing motion, aiming to cut the fruit in half. The more fruit you slice, the higher your score. However, be careful not to slice the bombs that appear among the fruit, as this will end your game.   
+             <br> READ ME <br> all credit goes to https://www.youtube.com/watch?v=cHEcuDNeh0k so don't coppy right me pls </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">rock-paper-scissors</h3>
+        <section class="button-Cotainer-2">
+
+
+          <a href="/rock-paper-scissors-video-master/index.html" ><button id="Play-Btn-2" >PLAY</button></a>
+          </section>
+        <div class="content">
+
+
+          <div class="image">
+            <img src="rock-paper-scissors.png" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+
+            <p>Rock, paper, scissors is a simple hand game that is played by two people. Each player simultaneously forms one of three shapes with an outstretched hand</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">Chess-Game</h3>
+        <section class="button-Cotainer-2">
+
+
+          <a href="/Chess-Game-main/index.html" ><button id="Play-Btn-2" >PLAY</button></a>
+          </section>
+        <div class="content">
+
+
+          <div class="image">
+            <img src="pngegg (2).png" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+
+            <p>Chess is a timeless strategy game for two players. It's played on an 8x8 checkered board with 16 pieces for each player</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '30px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 800, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 900, origin: 'right' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+
+      ScrollReveal().reveal('.button-Cotainer', { delay: 500, origin: 'right' });      
+      ScrollReveal().reveal('.button-Cotainer-2', { delay: 600, origin: 'left' });   
+   </script>
+
+  </body>
+</html>
+      
